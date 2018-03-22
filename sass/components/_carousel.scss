@@ -1,0 +1,40 @@
+/* Carousel
+   ========================================================================== */
+
+.carousel-footer {
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+.carousel-footer > strong {
+	line-height: 1.75;
+}
+
+.carousel-controller {
+	float: left;
+	margin-right: 12px;
+}
+
+.carousel-controller a.btn-carousel {
+	color: $brand-white;
+	background-color: $brand-primary;
+	float: left;
+	padding: 4px 6px 3px 6px;
+}
+
+.carousel-controller a.btn-carousel:hover {
+	 background-color: #585858; 
+	 color: $brand-white; 
+}
+
+.carousel-footer.top-space { 
+	margin-top: 25px; 
+}
+
+.btn-carousel-prev {
+	border-radius: 4px 0 0 4px;
+}
+
+.btn-carousel-next {
+	border-radius: 0 4px 4px 0;
+}

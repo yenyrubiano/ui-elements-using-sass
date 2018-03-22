@@ -1,0 +1,85 @@
+/* Forms
+   ========================================================================== */
+
+
+form, .form-group, .checkbox, .radio {
+	margin-bottom: 20px;
+}
+
+.form-control {
+	border: solid 1px #CBCBCB;
+	color: $brand-primary;
+	@include box-shadow(none);
+    @include border-radius(4px);
+	&:focus {
+		 @include box-shadow(none);
+   		 border-color: $brand-primary;
+	}
+}
+
+.input-sm {
+	height: 26px;
+	padding: 3px 10px;
+	@include border-radius(2px);
+}
+
+select.input-sm {
+    height: 27px;
+    line-height: 27px;
+}
+
+.input-lg {
+	height: 45px;
+}
+
+.form-label {
+	display: block;
+	font-weight: 300;
+	margin-bottom: 8px;
+}
+
+.checkbox-group {
+	margin: 8px 0;
+}
+
+.checkbox-group .checkbox-inline + .checkbox-inline {
+	margin-left: 18px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+	background-color: $brand-blue !important;
+}
+
+.datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active {
+	background-color: $brand-blue !important;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+	border: solid 1px $brand-blue !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+	background-color: $gray-light !important;
+	border: none !important;
+	color: $brand-primary !important;
+}
+
+.select2-container .select2-search--inline {
+	padding-bottom: 0;
+}
+
+.noUi-connect {
+	background: $brand-green !important;
+}
+
+// Feedback states
+.has-success {
+  @include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
+}
+.has-warning {
+  @include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
+}
+.has-error {
+  @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
+}
+

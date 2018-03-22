@@ -1,0 +1,63 @@
+/* Alerts
+   ========================================================================== */
+.alert {
+	background: #FFF;
+	position: relative;
+	border-color: #D8D8D8;
+	border-radius: 0;
+	padding: 10px 10px 10px 56px;
+	&:before {
+		border: solid 1px #FFF;
+		color: #FFF;
+		width: 46px;
+		height: 100%;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+// ALERT SUCCESS
+.alert-success {
+	color: $brand-primary;
+	&:before {
+		background: $brand-green;
+		content: '\e368';
+		font-family: "icomoon";
+	}
+}
+// ALERT INFO
+.alert-info {
+	color: $brand-primary;
+	&:before {
+		background: $brand-blue;
+		content: '\e365';
+		font-family: "icomoon";
+	}
+}
+// ALERT WARNING
+.alert-warning {
+	color: $brand-primary;
+	&:before {
+		background: $brand-orange;
+		content: '\e359';
+		font-family: "icomoon";
+	}
+}
+// ALERT DANGER
+.alert-danger {
+	color: $brand-primary;
+	&:before {
+		background: $brand-red;
+		content: '\e35c';
+		font-family: "icomoon";
+	}
+}
+
+.alert-dismissable .close, .alert-dismissible .close {
+	right: 0;
+}

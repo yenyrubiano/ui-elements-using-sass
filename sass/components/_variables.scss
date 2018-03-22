@@ -1,0 +1,255 @@
+//== Mouldifi variables
+//
+
+
+//== Colors
+//
+
+$gray-base:              #171717 !default;
+$gray-darker:            #656565 !default; 
+$gray-dark:              #78787A !default; 
+$gray:                   #C0C0C0 !default; 
+$gray-light:             #EDEDED !default;
+$gray-lighter:           #F8F8F8 !default;
+
+$brand-primary:         #00B9D2 !default;
+$brand-blue:            #00a6bd !default;
+$brand-orange:         	#FB9701 !default;
+$brand-red:             #E31B23 !default;
+$brand-green:           #77B300 !default;
+$brand-white:           #FFFFFF !default;
+
+
+$state-green-text:      $brand-green !default;
+$state-red-text:        $brand-red !default;
+$brand-purple:     		#7E57C2 !default;
+
+$link-color: $brand-primary !default;
+
+//== Fonts
+//
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900);
+
+$font-family-open-sans:  'Open Sans', sans-serif;
+$font-family-base:             $font-family-open-sans !default;
+
+
+//== Backgrounds Colors
+//
+
+$sidebar-bg:             $brand-primary!default;
+$nav-hover-bg:           $sidebar-bg !default;
+$nav-collapse-bg:        $gray-base !default;
+
+//== Typography
+//
+
+// Header Styles
+$h1-fontsize: 26px !default;
+$h2-fontsize: 22px !default;
+$h3-fontsize: 20px !default;
+$h4-fontsize: 18px !default;
+$h5-fontsize: 16px !default;
+$h6-fontsize: 14px !default;
+
+//== Components
+//
+
+$border-radius-base:        3px !default;
+$border-radius-large:		6px !default;
+$border-radius-small:		2px !default;
+
+
+
+//== Form states and alerts
+//
+
+$state-success-text:             $brand-green !default;
+$state-success-bg:               #f3f7ea !default;
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:                $brand-blue !default;
+$state-info-bg:                  #ebf3f9 !default;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:             $brand-orange !default;
+$state-warning-bg:               #fdf7ea !default;
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:              $brand-red !default;
+$state-danger-bg:                #fce9e9 !default;
+$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+//== Panels
+//
+
+$panel-bg:                    #FFF !default;
+$panel-body-padding:          20px !default;
+$panel-heading-padding:       20px !default;
+$panel-footer-padding:        $panel-heading-padding !default;
+$panel-border-radius:         $border-radius-base !default;
+
+//** Border color for elements within panels
+$panel-inner-border:          #D8D8D8 !default;
+$panel-footer-bg:             #f5f5f5 !default;
+
+$panel-default-text:          $gray-dark !default;
+$panel-default-border:        #D8D8D8 !default;
+$panel-default-heading-bg:    #FFF !default;
+
+$panel-primary-text:          #FFF !default;
+$panel-primary-border:        $brand-primary !default;
+$panel-primary-heading-bg:    $brand-primary !default;
+
+$panel-success-text:          $state-success-text !default;
+$panel-success-border:        $state-success-border !default;
+$panel-success-heading-bg:    $state-success-bg !default;
+
+$panel-info-text:             $state-info-text !default;
+$panel-info-border:           $state-info-border !default;
+$panel-info-heading-bg:       $state-info-bg !default;
+
+$panel-warning-text:          $state-warning-text !default;
+$panel-warning-border:        $state-warning-border !default;
+$panel-warning-heading-bg:    $state-warning-bg !default;
+
+$panel-danger-text:           $state-danger-text !default;
+$panel-danger-border:         $state-danger-border !default;
+$panel-danger-heading-bg:     $state-danger-bg !default;
+
+//== Labels
+//
+
+$label-default-bg:            $gray !default;
+$label-primary-bg:            $brand-primary !default;
+$label-success-bg:            $brand-green !default;
+$label-info-bg:               $brand-blue !default;
+$label-warning-bg:            $brand-orange !default;
+$label-danger-bg:             $brand-red !default;
+$label-secondary-bg:          $brand-purple !default;
+
+//** Default label text color
+$label-color:                 #FFF !default;
+$label-link-hover-color:      #FFF !default;
+
+//== Badges
+//
+
+$badge-default-bg:            $gray !default;
+$badge-primary-bg:            $brand-primary !default;
+$badge-success-bg:            $brand-green !default;
+$badge-info-bg:               $brand-blue !default;
+$badge-warning-bg:            $brand-orange !default;
+$badge-danger-bg:             $brand-red !default;
+$badge-secondary-bg:          $brand-purple !default;
+
+//** Default label text color
+$badge-color:                 #FFF !default;
+$badge-link-hover-color:      #FFF !default;
+
+
+//== Buttons
+//
+
+$btn-font-weight:                300 !default;
+
+$btn-default-color:              #333 !default;
+$btn-default-bg:                 $gray-light !default;
+$btn-default-border:             #ccc !default;
+
+$btn-primary-color:              #FFF !default;
+$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-border:             darken($btn-primary-bg, 0%) !default;
+
+$btn-success-color:              #FFF !default;
+$btn-success-bg:                 $brand-green !default;
+$btn-success-border:             darken($btn-success-bg, 5%) !default;
+
+$btn-info-color:                 #FFF !default;
+$btn-info-bg:                    $brand-blue !default;
+$btn-info-border:                darken($btn-info-bg, 5%) !default;
+
+$btn-warning-color:              #FFF !default;
+$btn-warning-bg:                 $brand-orange !default;
+$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+
+$btn-danger-color:               #FFF !default;
+$btn-danger-bg:                  $brand-red !default;
+$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+
+$btn-red-color:                  #FFF !default;
+$btn-red-bg:                     $brand-red !default;
+$btn-red-border:                 darken($btn-red-bg, 5%) !default;
+
+$btn-blue-color:                 #FFF !default;
+$btn-blue-bg:                    $brand-blue !default;
+$btn-blue-border:                darken($btn-blue-bg, 5%) !default;
+
+$btn-black-color:                #FFF !default;
+$btn-black-bg:                   $gray-base !default;
+$btn-black-border:               darken($btn-black-bg, 5%) !default;
+
+
+$btn-link-disabled-color:        $gray-light !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base:         $border-radius-base !default;
+$btn-border-radius-large:        $border-radius-large !default;
+$btn-border-radius-small:        $border-radius-small !default;
+
+
+//== Progress bars
+//
+//##
+
+//** Background color of the whole progress component
+$progress-bg:                 #f5f5f5 !default;
+
+//** Progress bar text color
+$progress-bar-color:          #FFF !default;
+
+//** Variable for setting rounded corners on progress bar.
+$progress-border-radius:      $border-radius-base !default;
+
+//** Default progress bar color
+$progress-bar-bg:             $brand-primary !default;
+//** Success progress bar color
+$progress-bar-success-bg:     $brand-green !default;
+//** Warning progress bar color
+$progress-bar-warning-bg:     $brand-orange !default;
+//** Danger progress bar color
+$progress-bar-danger-bg:      $brand-red !default;
+//** Info progress bar color
+$progress-bar-info-bg:        $brand-blue !default;
+
+
+//== Media queries breakpoints
+//
+
+// Extra small screen / phone
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+

@@ -1,0 +1,154 @@
+/* Buttons
+   ========================================================================== */
+
+.btn {
+	@include border-radius(4px);
+	font-weight: $btn-font-weight;
+	line-height: 1.2867;
+  padding: 8px 16px;
+  border: none;
+}
+
+.btn-2x {
+	padding: 10px 16px;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+	padding: 6px 12px;
+}	
+
+.btn-form .btn-default {
+  -moz-box-shadow: 0 4px #BEBEBE; 
+  -webkit-box-shadow: 0 4px #BEBEBE; 
+  box-shadow: 0 4px #BEBEBE;
+}
+
+.btn-form .btn-primary {
+  -moz-box-shadow: 0 4px #131313; 
+  -webkit-box-shadow: 0 4px #131313; 
+  box-shadow: 0 4px #131313;
+}
+
+.btn-form .btn-danger {
+  -moz-box-shadow: 0 4px #b6161c; 
+  -webkit-box-shadow: 0 4px #b6161c; 
+  box-shadow: 0 4px #b6161c;
+}
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-default {
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+
+.btn-success {
+  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+}
+
+.btn-info {
+  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+}
+
+.btn-warning {
+  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+}
+
+.btn-danger {
+  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+}
+
+.btn-red {
+  @include button-variant($btn-red-color, $btn-red-bg, $btn-red-border);
+}
+
+.btn-blue {
+  @include button-variant($btn-blue-color, $btn-blue-bg, $btn-blue-border);
+}
+
+.btn-black {
+  @include button-variant($btn-black-color, $btn-black-bg, $btn-black-border);
+}
+
+// Link buttons
+// -------------------------
+
+// Make a button look and behave like a link
+.btn-link {
+  color: $brand-primary;
+  font-weight: 600;
+  border-radius: 0;
+
+  &,
+  &:active,
+  &.active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+    @include box-shadow(none);
+  }
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  &:hover,
+  &:focus {
+    color: $gray-base;
+    background-color: transparent;
+	text-decoration: none;
+  }
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.btn-white {
+	background-color: #FFF;
+	border-color: #ccc;
+}
+
+.panel > .btn-block {
+	@include border-radius(0);
+}
+
+.bs-example .btn,
+.bs-example-group .btn-group {
+	margin: 4px 8px 4px 0;
+}
+
+.bs-example-block .btn {
+	margin: 6px 0;
+}
+
+.btn [class^="icon-"], 
+.btn [class*=" icon-"] {
+	font-weight: normal;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.btn-group-xs>.btn, .btn-xs {
+  font-size: 11px;
+  padding: 5px 10px;
+}
+
+.btn-icon {
+  padding: 4px;
+  width: 34px;
+  height: 34px;
+  line-height: 14px;
+}
+
+.btn .caret {
+  margin-left: 4px;
+} 
